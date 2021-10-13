@@ -66,7 +66,7 @@ public class Build_xml {
 
 
     // утилитный метод для создание нового узла XML-файла
-    private static Node getLanguageElements(Document doc, Element element, String name, String value) {
+    private static Node getElements(Document doc, Element element, String name, String value) {
         //  System.out.println("СОЗДАЕМ ЖЛЕМЕНТ С ИМЕНЕМ:" + name);
         Element node = doc.createElement(name);
         node.appendChild(doc.createTextNode(value));
@@ -76,16 +76,16 @@ public class Build_xml {
     private static Node getNote_poison(Document doc, String num, String average_age) {
 
         Element poisonous = doc.createElement("Poisonous");
-        poisonous.appendChild(getLanguageElements(doc, poisonous, "number", num));
-        poisonous.appendChild(getLanguageElements(doc, poisonous, "average_age", average_age));
+        poisonous.appendChild(getElements(doc, poisonous, "number", num));
+        poisonous.appendChild(getElements(doc, poisonous, "average_age", average_age));
         return poisonous;
     }
 
     private static Node getNote_no_poison(Document doc, String num, String average_age) {
 
         Element poisonous = doc.createElement("Nonpoisonous");
-        poisonous.appendChild(getLanguageElements(doc, poisonous, "number", num));
-        poisonous.appendChild(getLanguageElements(doc, poisonous, "average_age", average_age));
+        poisonous.appendChild(getElements(doc, poisonous, "number", num));
+        poisonous.appendChild(getElements(doc, poisonous, "average_age", average_age));
         return poisonous;
     }
 
