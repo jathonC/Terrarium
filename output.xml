@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Terrarium>
+    <name>Korobochka228</name>
+    <Poisonous>
+        <number>3</number>
+        <average_age>44</average_age>
+    </Poisonous>
+    <Nonpoisonous>
+        <number>3</number>
+        <average_age>157</average_age>
+    </Nonpoisonous>
+</Terrarium>
