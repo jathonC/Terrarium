@@ -9,7 +9,7 @@ public class Terrarium {
     private String name;
 
     private List<Reptile> reptilies;
-    private List<People> people;
+
 
     public void setName(String name) {
         this.name = name;
@@ -19,9 +19,7 @@ public class Terrarium {
         this.reptilies = reptilies;
     }
 
-    public void setPeople(List<People> people) {
-        this.people = people;
-    }
+
 
     public String getName() {
         return name;
@@ -31,9 +29,6 @@ public class Terrarium {
         return reptilies;
     }
 
-    public List<People> getPeople() {
-        return people;
-    }
 
     @Override
     public String toString() {
